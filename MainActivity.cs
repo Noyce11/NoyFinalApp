@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Runtime;
+using Android.Widget;
 using AndroidX.AppCompat.App;
 
 namespace NoyFinalApp
@@ -14,7 +15,18 @@ namespace NoyFinalApp
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            InitializeViews();
         }
+
+        private void InitializeViews()
+        {
+            FindViewById<TextView>(Resource.Id.tvToSignIn).Click +=
+                (s, e) => { StartActivity(typeof(SignInActivity)); };
+
+            FindViewById<TextView>(Resource.Id.tvToSignUp).Click +=
+                (s, e) => { StartActivity(typeof(SignUpActivity)); };
+        }
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
