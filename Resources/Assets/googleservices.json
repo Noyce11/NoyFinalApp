@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620405602552",
+    "project_id": "doggycare-9a74f",
+    "storage_bucket": "doggycare-9a74f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620405602552:android:6007254852fdbc036d230d",
+        "android_client_info": {
+          "package_name": "com.companyname.myfinalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv2zdfQwqvZJkc6pPqUm1RstjJwLEbJvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620405602552:android:d1385bd12d2436a56d230d",
+        "android_client_info": {
+          "package_name": "com.companyname.noyfinalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv2zdfQwqvZJkc6pPqUm1RstjJwLEbJvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,6 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Firebase.Auth;
@@ -101,7 +102,7 @@ namespace NoyFinalApp
             if (show)
             {
                 mProgressDialog = new Dialog(this, Android.Resource.Style.ThemeNoTitleBar);
-                View view = LayoutInflater.From(this).Inflate(Resource.Layout.progress_layout, null);
+                View view = LayoutInflater.From(this).Inflate(Resource.Layout.fb_progressbar, null);
                 //var mProgressMessage = (TextView)view.FindViewById(Resource.Id.;
                 //mProgressMessage.Text = "Loading...";
                 mProgressDialog.Window.SetBackgroundDrawableResource(Resource.Color.mtrl_btn_transparent_bg_color);
